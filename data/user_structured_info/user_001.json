@@ -1,0 +1,15 @@
+{
+  "origin_city": null,
+  "dest_city": null,
+  "weight": null,
+  "volume": null,
+  "service_type": "京东物流 POP 入仓一物一检",
+  "order_id": "JD202604040001",
+  "tracking_number": null,
+  "product_name": null,
+  "quantity": null,
+  "value": null,
+  "pickup_time": null,
+  "contact_name": null,
+  "contact_phone": null
+}

@@ -1,0 +1,539 @@
+{
+  "user_001": [
+    {
+      "user_question": "你好，我想查询一下我的订单状态",
+      "system_response": "您好，关于订单号 JD202604040001 的物流状态，目前系统暂未查询到该订单的实时物流信息。根据您提供的信息，该订单属于京东物流 POP 入仓一物一检业务，此类订单需经过第三方质检机构完成质检后，才能更新后续状态。\n\n在质检过程中，京东物流仅提供辅助操作服务，如拆包、贴码、扫描录入等，不负责质检结果判定。因此，若订单尚未完成质检流程，物流状态将暂时无法更新。建议您耐心等待第三方质检完成后，系统会自动同步最新进展。\n\n如您仍无法确认进度，可通过以下渠道获取进一步帮助：\n- 登录京东商家后台或京牛平台，查看“入仓质检”相关页面；\n- 联系您的专属客户经理或京东物流客服（电话：950618），提供订单号进行人工核查；\n- 若涉及异常处理，可参考系统推送的邮件通知，及时反馈处理意见。\n\n感谢您的理解与配合！",
+      "processing_details": {
+        "intent": {
+          "intent_type": "BUSINESS_QUERY",
+          "sub_intent": "TRACKING",
+          "confidence": 0.95,
+          "reason": "用户提到‘查询一下我的订单状态’，明确表达了对订单状态的追踪需求，属于订单/物流追踪意图。"
+        },
+        "rewritten_query": "我无法查询到订单号为 JD202604040001 的物流状态，请问该如何确认该订单的最新进展？是否属于京东物流的POP入仓一物一检业务订单，需等待第三方质检完成后才能更新状态？如仍无法解决，应通过哪些渠道获取进一步帮助？",
+        "extracted_params": {
+          "origin_city": null,
+          "dest_city": null,
+          "weight": null,
+          "volume": null,
+          "service_type": null,
+          "order_id": "JD202604040001",
+          "tracking_number": null,
+          "product_name": null,
+          "quantity": null,
+          "value": null,
+          "pickup_time": null,
+          "contact_name": null,
+          "contact_phone": null
+        },
+        "tool_results": {
+          "tool_name": "track_order_status",
+          "parameters": {
+            "order_id": "JD202604040001"
+          },
+          "result": "未找到订单JD202604040001的状态"
+        },
+        "rag_context": [
+          {
+            "id": 1,
+            "content": "③为POP入仓一物一检业务提供仓内辅助服务：仓库提供辅助中检质检人员进行拆包、绑定防伪扣、扫描防伪扣上的唯一码完成系统录入、打印条形码标签贴在商品包装上用于商品的库内流转，将质检完的货品重新放回包装盒内等额外仓储操作;\n\n④分类验收入库服务：对于第三方质检机构质检完的商品结果合格/不合格分别验收；合格商品出库配送给消费者，不合格商品后续退货给商家。 a.合格商品具体操作：扫描JDV单号查找对应订单，扫描防伪扣上的唯一码，系统触发打印库内标签后进行入库操作； b.不合格商品操作：扫描JDV单号查找对应订单，系统触发打印库内标签后进行入库操作;\n\n⑤提供系统自动采购上架出库服务。\n\n说明：对于POP入仓一物一检业务的包裹和品控、质量等与商品本身相关事宜由客户自行委托的第三方质检机构确认。京东物流仅提供质检过程中协助操作服务，但不对质检结果负责。",
+            "metadata": {
+              "category": "仓配一体",
+              "text_file_path": "./data/documents\\仓配一体\\文本.txt",
+              "image_count": 17,
+              "image_paths": [
+                "./data/documents\\仓配一体\\图片\\2.10异常处理.png",
+                "./data/documents\\仓配一体\\图片\\2.3价格.png",
+                "./data/documents\\仓配一体\\图片\\3. 增值服务.png",
+                "./data/documents\\仓配一体\\图片\\4.1.2服务计费规则.png",
+                "./data/documents\\仓配一体\\图片\\4.10物流溯源增值服务.png",
+                "./data/documents\\仓配一体\\图片\\4.11特殊条码管理增值服务.png",
+                "./data/documents\\仓配一体\\图片\\4.17逆向残品入仓.jpg",
+                "./data/documents\\仓配一体\\图片\\4.19.2服务内容.png",
+                "./data/documents\\仓配一体\\图片\\4.2.2京东物流为客户提供快递服务和运输服务保价.png",
+                "./data/documents\\仓配一体\\图片\\4.3贴码服务.jpg",
+                "./data/documents\\仓配一体\\图片\\4.4盘点服务.jpg",
+                "./data/documents\\仓配一体\\图片\\4.5.4 重点事项说明.png",
+                "./data/documents\\仓配一体\\图片\\4.5.4 重点事项说明2.jpg",
+                "./data/documents\\仓配一体\\图片\\4.6售后仓服务.jpg",
+                "./data/documents\\仓配一体\\图片\\4.7组套拆套.png",
+                "./data/documents\\仓配一体\\图片\\4.8耗材.png",
+                "./data/documents\\仓配一体\\图片\\4.9包装服务.png"
+              ],
+              "point_id": "49b2882f-58bf-4eb2-bbf5-a5b442af5daf",
+              "chunk_index": 27,
+              "total_chunks": 76,
+              "source_file": "文本",
+              "source_id": "49b2882f-58bf-4eb2-bbf5-a5b442af5daf"
+            }
+          },
+          {
+            "id": 2,
+            "content": "4.18.2服务内容包含但不限于：库存、数据可视、数据分析、数据决策系统工具，具体服务内容详见（https://jh.jdl.com/）公示。\n\n4.18.3服务说明：该服务是基于大数据和数理算法提供的数据决策建议，可用于日常运营以及日常决策参考，不涉及且不构成客户业务变化的影响及干预因素。\n\n4.18.4服务价格及收费方式：试用期内免费使用，具体期限由京东物流通知为准，试用期结束后客户若需购买双方另行签署购买协议。 客户使用本服务的仓储服务订单，仍需将按照主合同报价支付订单仓储服务相关生产费用。\n\n4.19专仓仓储增值服务\n\n4.19.1服务定义：\n\n针对京东零售平台POP商家入仓一物一检业务，京东物流为平台商家中小件商品提供专仓仓储额外操作服务。\n\n4.19.2服务内容\n\n①提供入仓验收暂存服务：仅收商家包装完好的商品，采集快递单号（JDV）完成收货，设置入库暂存区存放;\n\n②提供预约质检通知服务：仓库按第三方质测机构服务商类别，仓内将分别汇总当日待质检区包裹数量（或货品明细），将邮件通知对应第三方检测机构;",
+            "metadata": {
+              "category": "仓配一体",
+              "text_file_path": "./data/documents\\仓配一体\\文本.txt",
+              "image_count": 17,
+              "image_paths": [
+                "./data/documents\\仓配一体\\图片\\2.10异常处理.png",
+                "./data/documents\\仓配一体\\图片\\2.3价格.png",
+                "./data/documents\\仓配一体\\图片\\3. 增值服务.png",
+                "./data/documents\\仓配一体\\图片\\4.1.2服务计费规则.png",
+                "./data/documents\\仓配一体\\图片\\4.10物流溯源增值服务.png",
+                "./data/documents\\仓配一体\\图片\\4.11特殊条码管理增值服务.png",
+                "./data/documents\\仓配一体\\图片\\4.17逆向残品入仓.jpg",
+                "./data/documents\\仓配一体\\图片\\4.19.2服务内容.png",
+                "./data/documents\\仓配一体\\图片\\4.2.2京东物流为客户提供快递服务和运输服务保价.png",
+                "./data/documents\\仓配一体\\图片\\4.3贴码服务.jpg",
+                "./data/documents\\仓配一体\\图片\\4.4盘点服务.jpg",
+                "./data/documents\\仓配一体\\图片\\4.5.4 重点事项说明.png",
+                "./data/documents\\仓配一体\\图片\\4.5.4 重点事项说明2.jpg",
+                "./data/documents\\仓配一体\\图片\\4.6售后仓服务.jpg",
+                "./data/documents\\仓配一体\\图片\\4.7组套拆套.png",
+                "./data/documents\\仓配一体\\图片\\4.8耗材.png",
+                "./data/documents\\仓配一体\\图片\\4.9包装服务.png"
+              ],
+              "point_id": "158bdaee-1275-42e1-97aa-46235fff477a",
+              "chunk_index": 26,
+              "total_chunks": 76,
+              "source_file": "文本",
+              "source_id": "158bdaee-1275-42e1-97aa-46235fff477a"
+            }
+          },
+          {
+            "id": 3,
+            "content": "【关联表格图片】4.19.2服务内容.png：【表格图片】4.19.2服务内容.png\n| 服务项目 | 验收结果 | 服务价格（元/个） | 计费说明 |\n| --- | --- | --- | --- |\n| 专仓仓储增值服务 | 合格商品 | 5.44 | 一单一件 |\n|  | 不合格商品 | 5.1 | 一单一件 |\n\n**说明：**  \n1. 以上报价针对POP入仓一物一检项目  \n2. 以上报价是针对京东提供仓库、货架及仓库其他设备  \n3. 以上价格为含税价格，京东物流提供6%的增值税专用发票，无论客户是否要求提供发票，以上价格都保持不变  \n4. 以上报价不包括操作所需的包装用纸箱、包装袋，如有特殊包装耗材需求，双方另行签订增值补充协议  \n5. 以实际产生一物一检销售入库订单作为此增值服务的结算依据（图片路径：./data/documents\\仓配一体\\图片\\4.19.2服务内容.png）",
+            "metadata": {
+              "category": "仓配一体",
+              "text_file_path": "./data/documents\\仓配一体\\文本.txt",
+              "image_count": 17,
+              "image_paths": [
+                "./data/documents\\仓配一体\\图片\\2.10异常处理.png",
+                "./data/documents\\仓配一体\\图片\\2.3价格.png",
+                "./data/documents\\仓配一体\\图片\\3. 增值服务.png",
+                "./data/documents\\仓配一体\\图片\\4.1.2服务计费规则.png",
+                "./data/documents\\仓配一体\\图片\\4.10物流溯源增值服务.png",
+                "./data/documents\\仓配一体\\图片\\4.11特殊条码管理增值服务.png",
+                "./data/documents\\仓配一体\\图片\\4.17逆向残品入仓.jpg",
+                "./data/documents\\仓配一体\\图片\\4.19.2服务内容.png",
+                "./data/documents\\仓配一体\\图片\\4.2.2京东物流为客户提供快递服务和运输服务保价.png",
+                "./data/documents\\仓配一体\\图片\\4.3贴码服务.jpg",
+                "./data/documents\\仓配一体\\图片\\4.4盘点服务.jpg",
+                "./data/documents\\仓配一体\\图片\\4.5.4 重点事项说明.png",
+                "./data/documents\\仓配一体\\图片\\4.5.4 重点事项说明2.jpg",
+                "./data/documents\\仓配一体\\图片\\4.6售后仓服务.jpg",
+                "./data/documents\\仓配一体\\图片\\4.7组套拆套.png",
+                "./data/documents\\仓配一体\\图片\\4.8耗材.png",
+                "./data/documents\\仓配一体\\图片\\4.9包装服务.png"
+              ],
+              "point_id": "51415cb2-6d36-4f19-8aba-a0a5e2d54e42",
+              "chunk_index": 60,
+              "total_chunks": 76,
+              "source_file": "文本",
+              "source_id": "51415cb2-6d36-4f19-8aba-a0a5e2d54e42"
+            }
+          },
+          {
+            "id": 4,
+            "content": "（一）基本业务功能和扩展业务功能下收集的个人信息\n京东快递主要提供寄递服务，主要向您提供的基本业务功能包括账号注册与登录、实名认证、寄递下单、地址管理、支付、查运单、开发票、信息展示、安全保障、客户服务&投诉及意见反馈处理功能，同时您还可以根据特定需要如专属小哥、代收货款、商机管理、消息推送、APP升级、分享等使用我们的扩展业务功能。我们对于信息的收集和使用都将遵循法律法规所明示的合法性基础。\n我们提供的基本业务功能，需要依赖必要信息才得以运行，必要信息是指在保障APP基本功能服务正常运行所必需的个人信息，您选择使用京东快递提供的基本业务功能，则需要向我们提供或允许我们收集与使用必要个人信息，如您不同意，您将无法使用我们的基础产品服务。关于基本业务功能个人信息处理详情，具体您可点击此处访问京东快递基本业务功能下收集的个人信息清单查询。",
+            "metadata": {
+              "category": "个人信息保护规则",
+              "text_file_path": "./data/documents\\个人信息保护规则\\文本.txt",
+              "image_count": 0,
+              "image_paths": [],
+              "point_id": "19854a35-3745-465c-acb6-dfdcb84aa1b8",
+              "chunk_index": 5,
+              "total_chunks": 34,
+              "source_file": "文本",
+              "source_id": "19854a35-3745-465c-acb6-dfdcb84aa1b8"
+            }
+          },
+          {
+            "id": 5,
+            "content": "3.6.2 客户选择“异常需审核”，出现收件人拒收或联系不上收件人，京东物流将通过系统或邮件（需客户选择）向客户推送订单异常信息，客户需在收到京东物流的异常订单信息后在约定的时间内（最长不超过7天）给出处理意见，选择“再次投递”或“退回客户”或“报废处理”，客户未在约定时间内给出处理意见，京东物流将按照“退回客户”处理。",
+            "metadata": {
+              "category": "快运",
+              "text_file_path": "./data/documents\\快运\\文本.txt",
+              "image_count": 11,
+              "image_paths": [
+                "./data/documents\\快运\\图片\\4.10等收货人通知：.png",
+                "./data/documents\\快运\\图片\\4.11拆木架：.png",
+                "./data/documents\\快运\\图片\\4.13拍照服务.png",
+                "./data/documents\\快运\\图片\\4.16国补-信息采集-快运.png",
+                "./data/documents\\快运\\图片\\4.1保价服务.png",
+                "./data/documents\\快运\\图片\\4.2代收货款 个人用户.png",
+                "./data/documents\\快运\\图片\\4.2代收货款 月结商家.png",
+                "./data/documents\\快运\\图片\\4.3签单返还.png",
+                "./data/documents\\快运\\图片\\4.4包装服务.png",
+                "./data/documents\\快运\\图片\\4.8改址服务：.png",
+                "./data/documents\\快运\\图片\\4.9验证签收：.png"
+              ],
+              "point_id": "ea2be73a-8664-43ab-8244-6afa82d247ab",
+              "chunk_index": 6,
+              "total_chunks": 28,
+              "source_file": "文本",
+              "source_id": "ea2be73a-8664-43ab-8244-6afa82d247ab"
+            }
+          }
+        ],
+        "risk_info": null
+      }
+    },
+    {
+      "user_question": "订单号是JD202604040001",
+      "system_response": "您好，关于订单号 JD202604040001 的物流状态，目前系统暂未显示相关物流信息。根据京东物流 POP 入仓一物一检业务流程，该订单的质检环节由您自行委托的第三方质检机构负责，京东物流仅提供拆包、贴码、扫描录入等辅助操作服务，不直接参与或确认质检结果。\n\n当前订单可能仍处于“待质检”或“质检中”阶段，建议您通过以下方式跟进：\n\n1. **联系第三方质检机构**：确认是否已收到您的货品并完成质检；\n2. **查看邮件通知**：京东物流会将待质检包裹汇总后发送邮件至对应质检机构，请检查相关邮箱；\n3. **咨询京东物流客服**：如需进一步协助，可拨打客服电话 950616 或通过在线客服（https://jdcs.m.jd.com/jdchat/index.action?entry=jd_m_jdexpress）进行咨询。\n\n后续流程为：质检合格商品将完成入库并进入出库配送环节；若不合格，将按流程退回商家。请以第三方质检结果为准，并及时处理后续操作。",
+      "processing_details": {
+        "intent": {
+          "intent_type": "BUSINESS_QUERY",
+          "sub_intent": "TRACKING",
+          "confidence": 0.92,
+          "reason": "用户提供了订单号，虽然未明确要求查询状态，但提供订单号通常是为了查询订单信息，符合订单追踪的典型场景。"
+        },
+        "rewritten_query": "我想查询订单号为 JD202604040001 的物流状态，该订单属于京东物流 POP 入仓一物一检业务，目前系统未显示任何物流信息。请协助确认该订单是否已完成第三方质检，以及后续流程进展，并提供可查询或跟进的具体渠道。",
+        "extracted_params": {
+          "origin_city": null,
+          "dest_city": null,
+          "weight": null,
+          "volume": null,
+          "service_type": "京东物流 POP 入仓一物一检",
+          "order_id": "JD202604040001",
+          "tracking_number": null,
+          "product_name": null,
+          "quantity": null,
+          "value": null,
+          "pickup_time": null,
+          "contact_name": null,
+          "contact_phone": null
+        },
+        "tool_results": {
+          "tool_name": "track_order_status",
+          "parameters": {
+            "order_id": "JD202604040001"
+          },
+          "result": "未找到订单JD202604040001的状态"
+        },
+        "rag_context": [
+          {
+            "id": 1,
+            "content": "③为POP入仓一物一检业务提供仓内辅助服务：仓库提供辅助中检质检人员进行拆包、绑定防伪扣、扫描防伪扣上的唯一码完成系统录入、打印条形码标签贴在商品包装上用于商品的库内流转，将质检完的货品重新放回包装盒内等额外仓储操作;\n\n④分类验收入库服务：对于第三方质检机构质检完的商品结果合格/不合格分别验收；合格商品出库配送给消费者，不合格商品后续退货给商家。 a.合格商品具体操作：扫描JDV单号查找对应订单，扫描防伪扣上的唯一码，系统触发打印库内标签后进行入库操作； b.不合格商品操作：扫描JDV单号查找对应订单，系统触发打印库内标签后进行入库操作;\n\n⑤提供系统自动采购上架出库服务。\n\n说明：对于POP入仓一物一检业务的包裹和品控、质量等与商品本身相关事宜由客户自行委托的第三方质检机构确认。京东物流仅提供质检过程中协助操作服务，但不对质检结果负责。",
+            "metadata": {
+              "category": "仓配一体",
+              "text_file_path": "./data/documents\\仓配一体\\文本.txt",
+              "image_count": 17,
+              "image_paths": [
+                "./data/documents\\仓配一体\\图片\\2.10异常处理.png",
+                "./data/documents\\仓配一体\\图片\\2.3价格.png",
+                "./data/documents\\仓配一体\\图片\\3. 增值服务.png",
+                "./data/documents\\仓配一体\\图片\\4.1.2服务计费规则.png",
+                "./data/documents\\仓配一体\\图片\\4.10物流溯源增值服务.png",
+                "./data/documents\\仓配一体\\图片\\4.11特殊条码管理增值服务.png",
+                "./data/documents\\仓配一体\\图片\\4.17逆向残品入仓.jpg",
+                "./data/documents\\仓配一体\\图片\\4.19.2服务内容.png",
+                "./data/documents\\仓配一体\\图片\\4.2.2京东物流为客户提供快递服务和运输服务保价.png",
+                "./data/documents\\仓配一体\\图片\\4.3贴码服务.jpg",
+                "./data/documents\\仓配一体\\图片\\4.4盘点服务.jpg",
+                "./data/documents\\仓配一体\\图片\\4.5.4 重点事项说明.png",
+                "./data/documents\\仓配一体\\图片\\4.5.4 重点事项说明2.jpg",
+                "./data/documents\\仓配一体\\图片\\4.6售后仓服务.jpg",
+                "./data/documents\\仓配一体\\图片\\4.7组套拆套.png",
+                "./data/documents\\仓配一体\\图片\\4.8耗材.png",
+                "./data/documents\\仓配一体\\图片\\4.9包装服务.png"
+              ],
+              "point_id": "49b2882f-58bf-4eb2-bbf5-a5b442af5daf",
+              "chunk_index": 27,
+              "total_chunks": 76,
+              "source_file": "文本",
+              "source_id": "49b2882f-58bf-4eb2-bbf5-a5b442af5daf"
+            }
+          },
+          {
+            "id": 2,
+            "content": "【关联表格图片】4.19.2服务内容.png：【表格图片】4.19.2服务内容.png\n| 服务项目 | 验收结果 | 服务价格（元/个） | 计费说明 |\n| --- | --- | --- | --- |\n| 专仓仓储增值服务 | 合格商品 | 5.44 | 一单一件 |\n|  | 不合格商品 | 5.1 | 一单一件 |\n\n**说明：**  \n1. 以上报价针对POP入仓一物一检项目  \n2. 以上报价是针对京东提供仓库、货架及仓库其他设备  \n3. 以上价格为含税价格，京东物流提供6%的增值税专用发票，无论客户是否要求提供发票，以上价格都保持不变  \n4. 以上报价不包括操作所需的包装用纸箱、包装袋，如有特殊包装耗材需求，双方另行签订增值补充协议  \n5. 以实际产生一物一检销售入库订单作为此增值服务的结算依据（图片路径：./data/documents\\仓配一体\\图片\\4.19.2服务内容.png）",
+            "metadata": {
+              "category": "仓配一体",
+              "text_file_path": "./data/documents\\仓配一体\\文本.txt",
+              "image_count": 17,
+              "image_paths": [
+                "./data/documents\\仓配一体\\图片\\2.10异常处理.png",
+                "./data/documents\\仓配一体\\图片\\2.3价格.png",
+                "./data/documents\\仓配一体\\图片\\3. 增值服务.png",
+                "./data/documents\\仓配一体\\图片\\4.1.2服务计费规则.png",
+                "./data/documents\\仓配一体\\图片\\4.10物流溯源增值服务.png",
+                "./data/documents\\仓配一体\\图片\\4.11特殊条码管理增值服务.png",
+                "./data/documents\\仓配一体\\图片\\4.17逆向残品入仓.jpg",
+                "./data/documents\\仓配一体\\图片\\4.19.2服务内容.png",
+                "./data/documents\\仓配一体\\图片\\4.2.2京东物流为客户提供快递服务和运输服务保价.png",
+                "./data/documents\\仓配一体\\图片\\4.3贴码服务.jpg",
+                "./data/documents\\仓配一体\\图片\\4.4盘点服务.jpg",
+                "./data/documents\\仓配一体\\图片\\4.5.4 重点事项说明.png",
+                "./data/documents\\仓配一体\\图片\\4.5.4 重点事项说明2.jpg",
+                "./data/documents\\仓配一体\\图片\\4.6售后仓服务.jpg",
+                "./data/documents\\仓配一体\\图片\\4.7组套拆套.png",
+                "./data/documents\\仓配一体\\图片\\4.8耗材.png",
+                "./data/documents\\仓配一体\\图片\\4.9包装服务.png"
+              ],
+              "point_id": "51415cb2-6d36-4f19-8aba-a0a5e2d54e42",
+              "chunk_index": 60,
+              "total_chunks": 76,
+              "source_file": "文本",
+              "source_id": "51415cb2-6d36-4f19-8aba-a0a5e2d54e42"
+            }
+          },
+          {
+            "id": 3,
+            "content": "4.18.2服务内容包含但不限于：库存、数据可视、数据分析、数据决策系统工具，具体服务内容详见（https://jh.jdl.com/）公示。\n\n4.18.3服务说明：该服务是基于大数据和数理算法提供的数据决策建议，可用于日常运营以及日常决策参考，不涉及且不构成客户业务变化的影响及干预因素。\n\n4.18.4服务价格及收费方式：试用期内免费使用，具体期限由京东物流通知为准，试用期结束后客户若需购买双方另行签署购买协议。 客户使用本服务的仓储服务订单，仍需将按照主合同报价支付订单仓储服务相关生产费用。\n\n4.19专仓仓储增值服务\n\n4.19.1服务定义：\n\n针对京东零售平台POP商家入仓一物一检业务，京东物流为平台商家中小件商品提供专仓仓储额外操作服务。\n\n4.19.2服务内容\n\n①提供入仓验收暂存服务：仅收商家包装完好的商品，采集快递单号（JDV）完成收货，设置入库暂存区存放;\n\n②提供预约质检通知服务：仓库按第三方质测机构服务商类别，仓内将分别汇总当日待质检区包裹数量（或货品明细），将邮件通知对应第三方检测机构;",
+            "metadata": {
+              "category": "仓配一体",
+              "text_file_path": "./data/documents\\仓配一体\\文本.txt",
+              "image_count": 17,
+              "image_paths": [
+                "./data/documents\\仓配一体\\图片\\2.10异常处理.png",
+                "./data/documents\\仓配一体\\图片\\2.3价格.png",
+                "./data/documents\\仓配一体\\图片\\3. 增值服务.png",
+                "./data/documents\\仓配一体\\图片\\4.1.2服务计费规则.png",
+                "./data/documents\\仓配一体\\图片\\4.10物流溯源增值服务.png",
+                "./data/documents\\仓配一体\\图片\\4.11特殊条码管理增值服务.png",
+                "./data/documents\\仓配一体\\图片\\4.17逆向残品入仓.jpg",
+                "./data/documents\\仓配一体\\图片\\4.19.2服务内容.png",
+                "./data/documents\\仓配一体\\图片\\4.2.2京东物流为客户提供快递服务和运输服务保价.png",
+                "./data/documents\\仓配一体\\图片\\4.3贴码服务.jpg",
+                "./data/documents\\仓配一体\\图片\\4.4盘点服务.jpg",
+                "./data/documents\\仓配一体\\图片\\4.5.4 重点事项说明.png",
+                "./data/documents\\仓配一体\\图片\\4.5.4 重点事项说明2.jpg",
+                "./data/documents\\仓配一体\\图片\\4.6售后仓服务.jpg",
+                "./data/documents\\仓配一体\\图片\\4.7组套拆套.png",
+                "./data/documents\\仓配一体\\图片\\4.8耗材.png",
+                "./data/documents\\仓配一体\\图片\\4.9包装服务.png"
+              ],
+              "point_id": "158bdaee-1275-42e1-97aa-46235fff477a",
+              "chunk_index": 26,
+              "total_chunks": 76,
+              "source_file": "文本",
+              "source_id": "158bdaee-1275-42e1-97aa-46235fff477a"
+            }
+          },
+          {
+            "id": 4,
+            "content": "联系电话：950616\n电子邮件：unifiedprocess@jd.com\n在线客服：https://jdcs.m.jd.com/jdchat/index.action?entry=jd_m_jdexpress\n注册地址：北京市海淀区苏州街20号院2号楼一层101\n常用办公地址：北京市经济技术开发区科创十一街8号院京东总部4号楼5层",
+            "metadata": {
+              "category": "个人信息保护规则",
+              "text_file_path": "./data/documents\\个人信息保护规则\\文本.txt",
+              "image_count": 0,
+              "image_paths": [],
+              "point_id": "0255b5a7-e276-41d7-82fd-f5e615a05e93",
+              "chunk_index": 2,
+              "total_chunks": 34,
+              "source_file": "文本",
+              "source_id": "0255b5a7-e276-41d7-82fd-f5e615a05e93"
+            }
+          },
+          {
+            "id": 5,
+            "content": "| 出库生产 | 1.拣货下架、复核<br>2.打印运单<br>3.打包、运单贴<br>4.出库(不含耗材) | 单单（含件） | 单件 | 元/单<br>2.8 | 3.5 | 4.5 | 元/方 | 28 | 1.若订单中全部为ABC件型，生产费=最大件型售价*件格+其他件型对应各自续价*件格加和；<br>2.若订单中含D件型商品，则该订单的生产费整体按D件型的计算逻辑，生产费=MAX（订单总体积*体积单价，订单总件数*每件单价） |\n| 销退 | 1.退货商品清点<br>2.验收入库、上架 | 单单（含件） | 续件 | 元/单<br>0.5 | 0.6 | 0.8 | 元/件 | 3 | 1.退货商品清点<br>2.验收入库、上架同出库生产费计算逻辑<br>3. 客户退货商品，京东物流可提供3天免费存储服务，超出3天未提货需收取超期存储费0.5元/件/日<br>1. 天数计算=实际提货时间-预约提货时间<br>2) 暂存整3天及以下不收费用，超出3天按照向上取整进行收费，例如暂存天数超3天不足4天算4天 |",
+            "metadata": {
+              "category": "仓配一体",
+              "text_file_path": "./data/documents\\仓配一体\\文本.txt",
+              "image_count": 17,
+              "image_paths": [
+                "./data/documents\\仓配一体\\图片\\2.10异常处理.png",
+                "./data/documents\\仓配一体\\图片\\2.3价格.png",
+                "./data/documents\\仓配一体\\图片\\3. 增值服务.png",
+                "./data/documents\\仓配一体\\图片\\4.1.2服务计费规则.png",
+                "./data/documents\\仓配一体\\图片\\4.10物流溯源增值服务.png",
+                "./data/documents\\仓配一体\\图片\\4.11特殊条码管理增值服务.png",
+                "./data/documents\\仓配一体\\图片\\4.17逆向残品入仓.jpg",
+                "./data/documents\\仓配一体\\图片\\4.19.2服务内容.png",
+                "./data/documents\\仓配一体\\图片\\4.2.2京东物流为客户提供快递服务和运输服务保价.png",
+                "./data/documents\\仓配一体\\图片\\4.3贴码服务.jpg",
+                "./data/documents\\仓配一体\\图片\\4.4盘点服务.jpg",
+                "./data/documents\\仓配一体\\图片\\4.5.4 重点事项说明.png",
+                "./data/documents\\仓配一体\\图片\\4.5.4 重点事项说明2.jpg",
+                "./data/documents\\仓配一体\\图片\\4.6售后仓服务.jpg",
+                "./data/documents\\仓配一体\\图片\\4.7组套拆套.png",
+                "./data/documents\\仓配一体\\图片\\4.8耗材.png",
+                "./data/documents\\仓配一体\\图片\\4.9包装服务.png"
+              ],
+              "point_id": "7904bcd0-ff93-4b0b-98e1-127d38819f51",
+              "chunk_index": 52,
+              "total_chunks": 76,
+              "source_file": "文本",
+              "source_id": "7904bcd0-ff93-4b0b-98e1-127d38819f51"
+            }
+          }
+        ],
+        "risk_info": null
+      }
+    }
+  ],
+  "user_002": [
+    {
+      "user_question": "快递什么时候能到？",
+      "system_response": "您好，很抱歉目前无法查询该运单的预计送达时间，因为缺少发货地和收货地等关键信息。为了准确估算派送时效，请您提供具体的发货城市和收货城市，这样我才能为您进一步查询。您也可以通过京东物流官网或拨打客服热线950616进行实时查询，获取更详细的信息哦~",
+      "processing_details": {
+        "intent": {
+          "intent_type": "BUSINESS_QUERY",
+          "sub_intent": "DELIVERY_TIME",
+          "confidence": 0.92,
+          "reason": "用户询问快递的到达时间，属于时效查询意图。"
+        },
+        "rewritten_query": "请根据运单号查询该快递的预计送达时间，并提供发货地和收货地信息以便准确估算派送时效。",
+        "extracted_params": {
+          "origin_city": null,
+          "dest_city": null,
+          "weight": null,
+          "volume": null,
+          "service_type": null,
+          "order_id": null,
+          "tracking_number": null,
+          "product_name": null,
+          "quantity": null,
+          "value": null,
+          "pickup_time": null,
+          "contact_name": null,
+          "contact_phone": null
+        },
+        "tool_results": {
+          "tool_name": null,
+          "parameters": {},
+          "result": "缺少计算送达时间所需的参数: origin_city, dest_city"
+        },
+        "rag_context": [
+          {
+            "id": 1,
+            "content": "2. 服务标准\n2.1服务概述：京东物流负责将货物送至客户指定目的地并进行交接的托运服务，含正向、逆向物流服务：①正向物流服务：是指京东物流接受客户委托后，将客户货物从指定提货地运送至指定目的地的物流服务。客户按照发货所在地对应的截单时间进行下单，在下单时准确、真实地填写各项内容，包括但不限于货物内容、体积、重量、数量、提货地址、送货地址、双方联系人姓名、电话等信息，将包装完好的货物交付京东物流的提货人员，京东物流根据委托运送至客户指定目的地，货物重量以京东物流称重量方记录为准；\n②逆向物流服务：是指京东物流接受客户委托后，由京东物流将拒收或退回的客户货物从指定提货地运送至指定目的地的物流服务。退货货物信息以京东物流信息系统中记录数据为准，送回过程中所产生的物流服务费将向客户收取。\n2.2时效：时效从接货次日计算，具体线路时间可通过京东物流官网查询、咨询950616或当地业务员。特快重货/特快零担为时效产品，在下单时系统展示的时间段内到达。\n\n2.3截单时间：通过京东物流官网查询。",
+            "metadata": {
+              "category": "快运",
+              "text_file_path": "./data/documents\\快运\\文本.txt",
+              "image_count": 11,
+              "image_paths": [
+                "./data/documents\\快运\\图片\\4.10等收货人通知：.png",
+                "./data/documents\\快运\\图片\\4.11拆木架：.png",
+                "./data/documents\\快运\\图片\\4.13拍照服务.png",
+                "./data/documents\\快运\\图片\\4.16国补-信息采集-快运.png",
+                "./data/documents\\快运\\图片\\4.1保价服务.png",
+                "./data/documents\\快运\\图片\\4.2代收货款 个人用户.png",
+                "./data/documents\\快运\\图片\\4.2代收货款 月结商家.png",
+                "./data/documents\\快运\\图片\\4.3签单返还.png",
+                "./data/documents\\快运\\图片\\4.4包装服务.png",
+                "./data/documents\\快运\\图片\\4.8改址服务：.png",
+                "./data/documents\\快运\\图片\\4.9验证签收：.png"
+              ],
+              "point_id": "9954d2a9-c778-4a87-b884-b417c05692df",
+              "chunk_index": 2,
+              "total_chunks": 28,
+              "source_file": "文本",
+              "source_id": "9954d2a9-c778-4a87-b884-b417c05692df"
+            }
+          },
+          {
+            "id": 2,
+            "content": "| 快递封套 小号 | 260*(185+40)mm | 个 | 0.2元/个 |\n| 运单 | 76*130mm、100*113mm | 张 | 免费 |（图片路径：./data/documents\\快递\\图片\\4.4包装服务2.png）",
+            "metadata": {
+              "category": "快递",
+              "text_file_path": "./data/documents\\快递\\文本.txt",
+              "image_count": 16,
+              "image_paths": [
+                "./data/documents\\快递\\图片\\4.1.3全额保 收费标准.png",
+                "./data/documents\\快递\\图片\\4.1.4基础保 收费标准.png",
+                "./data/documents\\快递\\图片\\4.1.5定额保 收费标准.png",
+                "./data/documents\\快递\\图片\\4.1.5定额保 理赔标准.png",
+                "./data/documents\\快递\\图片\\4.15拍照服务.png",
+                "./data/documents\\快递\\图片\\4.2代收货款 个人用户.png",
+                "./data/documents\\快递\\图片\\4.2代收货款 月结商家.png",
+                "./data/documents\\快递\\图片\\4.3签单返还.png",
+                "./data/documents\\快递\\图片\\4.4包装服务.png",
+                "./data/documents\\快递\\图片\\4.4包装服务2.png",
+                "./data/documents\\快递\\图片\\4.5京尊达.png",
+                "./data/documents\\快递\\图片\\4.6改址服务.png",
+                "./data/documents\\快递\\图片\\4.7指定签收.png",
+                "./data/documents\\快递\\图片\\4.8鸡毛信.jpg",
+                "./data/documents\\快递\\图片\\6.1.3收费标准.jpg",
+                "./data/documents\\快递\\图片\\6.2.3纸箱型号及价格.png"
+              ],
+              "point_id": "b25d9d60-b3b9-47cb-8245-f8ebbade5574",
+              "chunk_index": 42,
+              "total_chunks": 47,
+              "source_file": "文本",
+              "source_id": "b25d9d60-b3b9-47cb-8245-f8ebbade5574"
+            }
+          },
+          {
+            "id": 3,
+            "content": "（一）基本业务功能和扩展业务功能下收集的个人信息\n京东快递主要提供寄递服务，主要向您提供的基本业务功能包括账号注册与登录、实名认证、寄递下单、地址管理、支付、查运单、开发票、信息展示、安全保障、客户服务&投诉及意见反馈处理功能，同时您还可以根据特定需要如专属小哥、代收货款、商机管理、消息推送、APP升级、分享等使用我们的扩展业务功能。我们对于信息的收集和使用都将遵循法律法规所明示的合法性基础。\n我们提供的基本业务功能，需要依赖必要信息才得以运行，必要信息是指在保障APP基本功能服务正常运行所必需的个人信息，您选择使用京东快递提供的基本业务功能，则需要向我们提供或允许我们收集与使用必要个人信息，如您不同意，您将无法使用我们的基础产品服务。关于基本业务功能个人信息处理详情，具体您可点击此处访问京东快递基本业务功能下收集的个人信息清单查询。",
+            "metadata": {
+              "category": "个人信息保护规则",
+              "text_file_path": "./data/documents\\个人信息保护规则\\文本.txt",
+              "image_count": 0,
+              "image_paths": [],
+              "point_id": "19854a35-3745-465c-acb6-dfdcb84aa1b8",
+              "chunk_index": 5,
+              "total_chunks": 34,
+              "source_file": "文本",
+              "source_id": "19854a35-3745-465c-acb6-dfdcb84aa1b8"
+            }
+          },
+          {
+            "id": 4,
+            "content": "2. 服务标准\n2.1时效：当日寄件，1小时内上门收件（如客户有预约时间，则以客户实际预约上门取件时间为准），具体可通过京东物流官网查询、咨询950616或当地快递员。\n2.2截单时间：通过京东物流官网查询、咨询950616或当地快递员。\n2.3服务时间：全年提供标准服务。\n2.4服务范围：收件范围以实际开通为准，派送范围为中国大陆全境，具体服务范围以官网查询为准。\n2.5价格：具体费用标准根据所选的不同产品或始发地、目的地有所差异，更多详情可通过京东物流官网查询，或致电京东物流官方客服950616、当地快递员咨询。客户若选用了京东物流仓配服务，快递将从京东物流自营仓库发出，该等快递服务计费以京东物流自营仓库采集的货物及耗材相关信息（包括长、宽、高、重量信息）为准。\n2.6 生鲜产品： 支持生鲜常温、冷藏(0-4℃) 、冷冻(≤-18℃)、深冷(≤-25℃)温层。已经完成保温包装的包裹，提供常温配送服务。仓配一体配送温层，根据库房采集商品温层为主要温层，如需开通其他温层服务，双方另行协商。不支持逆向物流服务。",
+            "metadata": {
+              "category": "快递",
+              "text_file_path": "./data/documents\\快递\\文本.txt",
+              "image_count": 16,
+              "image_paths": [
+                "./data/documents\\快递\\图片\\4.1.3全额保 收费标准.png",
+                "./data/documents\\快递\\图片\\4.1.4基础保 收费标准.png",
+                "./data/documents\\快递\\图片\\4.1.5定额保 收费标准.png",
+                "./data/documents\\快递\\图片\\4.1.5定额保 理赔标准.png",
+                "./data/documents\\快递\\图片\\4.15拍照服务.png",
+                "./data/documents\\快递\\图片\\4.2代收货款 个人用户.png",
+                "./data/documents\\快递\\图片\\4.2代收货款 月结商家.png",
+                "./data/documents\\快递\\图片\\4.3签单返还.png",
+                "./data/documents\\快递\\图片\\4.4包装服务.png",
+                "./data/documents\\快递\\图片\\4.4包装服务2.png",
+                "./data/documents\\快递\\图片\\4.5京尊达.png",
+                "./data/documents\\快递\\图片\\4.6改址服务.png",
+                "./data/documents\\快递\\图片\\4.7指定签收.png",
+                "./data/documents\\快递\\图片\\4.8鸡毛信.jpg",
+                "./data/documents\\快递\\图片\\6.1.3收费标准.jpg",
+                "./data/documents\\快递\\图片\\6.2.3纸箱型号及价格.png"
+              ],
+              "point_id": "18afba20-e87f-463c-bd8f-f803107a4b63",
+              "chunk_index": 2,
+              "total_chunks": 47,
+              "source_file": "文本",
+              "source_id": "18afba20-e87f-463c-bd8f-f803107a4b63"
+            }
+          },
+          {
+            "id": 5,
+            "content": "4.7预约派送：\n针对京东商家推出的服务，商家下单时可指定快件送达时间（到件后7天内的某个时间），我司根据商家时间要求完成派送的增值服务，提供定时派送和夜间派送两个服务，定时派送派送时间段为9：00-21：00（具体情况以当地站点为准）；夜间派送时间段为21：00-24：00.\n收费标准：\n定时派送：3元/票\n夜间派送：150元/票\n\n等寄件人通知：3元/票\n\n4.8改址服务：\n\n改址服务是指京东物流将快件由运单收件地址转寄到收寄件人另行指定的收件地址的增值服务。\n\n收费标准：\n\n\n\n改址类型说明：\n\n同城同站：收件地址修改前后在同一城市，且由京东物流同一站点进行派送。\n\n同城跨站：收件地址修改前后在同一城市，但是不由京东物流同一站点进行派送。\n\n跨城：收件地址修改前后不在同一城市（直辖市一级，非直辖市二级属于同城）。\n\n4.9验证签收：\n\n京东物流送货时根据合同商家需求提供特殊的签收验证服务与技术支持，服务包含系统验证、密钥验证、身份验证等技术验证服务，提高客户货物交付安全性。\n\n\n\n4.10等收货人通知：",
+            "metadata": {
+              "category": "快运",
+              "text_file_path": "./data/documents\\快运\\文本.txt",
+              "image_count": 11,
+              "image_paths": [
+                "./data/documents\\快运\\图片\\4.10等收货人通知：.png",
+                "./data/documents\\快运\\图片\\4.11拆木架：.png",
+                "./data/documents\\快运\\图片\\4.13拍照服务.png",
+                "./data/documents\\快运\\图片\\4.16国补-信息采集-快运.png",
+                "./data/documents\\快运\\图片\\4.1保价服务.png",
+                "./data/documents\\快运\\图片\\4.2代收货款 个人用户.png",
+                "./data/documents\\快运\\图片\\4.2代收货款 月结商家.png",
+                "./data/documents\\快运\\图片\\4.3签单返还.png",
+                "./data/documents\\快运\\图片\\4.4包装服务.png",
+                "./data/documents\\快运\\图片\\4.8改址服务：.png",
+                "./data/documents\\快运\\图片\\4.9验证签收：.png"
+              ],
+              "point_id": "fdf343b9-a363-433f-8677-b46754fa41c2",
+              "chunk_index": 10,
+              "total_chunks": 28,
+              "source_file": "文本",
+              "source_id": "fdf343b9-a363-433f-8677-b46754fa41c2"
+            }
+          }
+        ],
+        "risk_info": null
+      }
+    }
+  ]
+}

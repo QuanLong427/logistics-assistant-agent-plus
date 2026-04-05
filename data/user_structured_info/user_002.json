@@ -1,0 +1,15 @@
+{
+  "origin_city": null,
+  "dest_city": null,
+  "weight": null,
+  "volume": null,
+  "service_type": null,
+  "order_id": null,
+  "tracking_number": null,
+  "product_name": null,
+  "quantity": null,
+  "value": null,
+  "pickup_time": null,
+  "contact_name": null,
+  "contact_phone": null
+}

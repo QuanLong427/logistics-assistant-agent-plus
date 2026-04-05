@@ -1,0 +1,6 @@
+INFO:root:\U0001f50d 开始加载向量存储，路径：./data/rag_knowledge_base
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Successfully loaded faiss with AVX2 support.
+INFO:root:加载向量存储失败: Error in __cdecl faiss::FileIOReader::FileIOReader(const char *) at D:\a\faiss-wheels\faiss-wheels\third-party\faiss\faiss\impl\io.cpp:70: Error: 'f' failed: could not open data\rag_knowledge_base\index.faiss for reading: No such file or directory
+ERROR:root:\u274c 初始化BM25检索器失败: division by zero
+WARNING:sentence_transformers.cross_encoder.util:The CrossEncoder `model_name` argument was renamed and is now deprecated, please use `model_name_or_path` instead.
